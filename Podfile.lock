@@ -1,0 +1,30 @@
+PODS:
+  - DTModelStorage (7.2.0):
+    - DTModelStorage/Core (= 7.2.0)
+  - DTModelStorage/Core (7.2.0)
+  - DTTableViewManager (6.4.0):
+    - DTModelStorage (~> 7.2.0)
+  - FeedKit (8.0.0)
+  - PKHUD (5.2.0)
+
+DEPENDENCIES:
+  - DTTableViewManager
+  - FeedKit
+  - PKHUD (~> 5.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - DTModelStorage
+    - DTTableViewManager
+    - FeedKit
+    - PKHUD
+
+SPEC CHECKSUMS:
+  DTModelStorage: e60e61ceb4a55b156aedafc20bce740bd8c02274
+  DTTableViewManager: 08ea8335c0769c91bf2ffd0e843346b894d41e27
+  FeedKit: 4a78f07adf7f0a224b904014678f1de82a7ffc21
+  PKHUD: dd5357ac65f26115c35c4a68e9b328053326c5fe
+
+PODFILE CHECKSUM: bd496dfe5a4edbe75970208b1146589742ec1ffb
+
+COCOAPODS: 1.5.3
