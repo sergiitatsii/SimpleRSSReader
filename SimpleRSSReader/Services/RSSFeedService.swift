@@ -30,9 +30,18 @@ class RSSFeedService: RSSFeedServiceType {
         return
       }
       
-      let items = feed.items?.compactMap { FeedItem(title: $0.title!, link: URL(string:$0.link!)!) }
+      var feedItems = [FeedItem]()
+      
+      if let items = feed.items {
+        for item in items {
+          if let title = item.title, let link = item.link, let url = URL(string: link) {
+            feedItems.append(FeedItem(title: title, link: url))
+          }
+        }
+      }
+      
       DispatchQueue.main.async {
-        completion(items!, nil)
+        completion(feedItems, nil)
       }
     }
   }
